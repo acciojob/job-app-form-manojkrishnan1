@@ -4,10 +4,36 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		*{
+			margin:5px;
+		}
+	</style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	<form>
+		<div><input type="text" id="name" required placeholder="Name" name="name"></div>
+		<input type="email" id="email" required placeholder="Email" name="email">
+		<div>
+			Gender:&nbsp;
+			<label for="Male"><input type="radio" required id="Male" value="m" name="gender">Male</label>
+			<label for="Female"><input type="radio" required id="Female" value="f" name="gender">Female</label>
+			<label for="Others"><input type="radio" required id="Others" value="o" name="gender">Others</label>
+		</div>
+		<label for="laptop">Choose a Laptop Brand&nbsp;</label>
+		<select name="laptop" id="laptop">
+		<option value="apple">Apple</option>
+		<option value="asus">ASUS</option>
+		<option value="hp">HP</option>
+	</select>
+	<div><input type="number" required id="age" placeholder="Age" name="age"></div>
+	<div>Date of Birth&nbsp;&nbsp;&nbsp;<input type="date" required id="dob" name="dob"></div>
+	<div>Enter a Password&nbsp;<input type="password" id="password" required name="password"></div>
+	<div>Enter URL of portfolio <input type="url" name="portfolio" id="portfolio"></div>
+	<input type="submit" value="Submit">
+	</form>
     <script type="text/javascript" src="./script.js">
 </script>
 
